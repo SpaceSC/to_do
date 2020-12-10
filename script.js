@@ -40,7 +40,7 @@ function pageLoaded() {
   function newItem() {
     root.insertAdjacentHTML("beforeend", note);
 
-  // TODO: eseményfigyelőt rátenni az újonnan hozzáadott sorokra is a 75-ös sor beli (removeBtns[index].addEventListener("click", removeItem);)
+  // TODO: eseményfigyelőt rátenni az újonnan hozzáadott sorokra is a 75-ös sor beli (removeBtns[index].addEventListener("click", removeItem);), mert most az új note-ok nem törlődnek a delete gomb megnyomásakor
 
   }
 
