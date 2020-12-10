@@ -16,8 +16,8 @@ let minimumNote = 10;
 
 let note = `
   <div class="fruit">
-    <input type="checkbox" id="tick" name="tick" value="tick">
-    <input type="text" id="myNote" name="myNote" placeholder="my note">
+    <input type="checkbox" name="tick" value="tick">
+    <input type="text" name="myNote" placeholder="my note">
     <button class="delete" type="button">Delete</button>
   </div> 
 `;
@@ -27,14 +27,13 @@ let note = `
 
 for (let index = 0; index < minimumNote; index++) {
   root.insertAdjacentHTML("beforeend", note);
-  
 }
 
-// új note hozzáadás gomb, amivel a lista végére vagy azon kívül egy új elemet (insertAdjacentHTML afterend, tehát a root-on kívül hozzuk létre)
+// root-on kívülre új note hozzáadás gomb, amivel kattintásra egy új elemet tudunk hozzáadni (insertAdjacentHTML afterend, tehát a root-on kívül hozzuk létre)
 
 const addNoteBtn = `<button type="button">New Note</button>`;
 
-root.insertAdjacentHTML("afterend", note);
+root.insertAdjacentHTML("afterend", addNoteBtn);
 
 // click esemény hozzáadása addEventListener az új note hozzáadás gombhoz
 
